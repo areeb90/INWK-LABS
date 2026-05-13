@@ -1,0 +1,85 @@
+
+!
+! ============================================================
+! Router: R1
+! ============================================================
+!
+
+interface Loopback0
+ ip address 150.1.1.1 255.255.255.255
+ no shutdown
+!
+
+interface GigabitEthernet1.12
+ encapsulation dot1Q 12
+ ip address 155.1.12.1 255.255.255.0
+ no shutdown
+!
+
+interface GigabitEthernet1.13
+ encapsulation dot1Q 13
+ ip address 155.1.13.1 255.255.255.0
+ no shutdown
+!
+
+interface GigabitEthernet1.14
+ encapsulation dot1Q 14
+ ip address 155.1.14.1 255.255.255.0
+ no shutdown
+!
+
+
+!
+! ============================================================
+! Router: R2
+! ============================================================
+!
+
+interface Loopback0
+ ip address 150.1.2.2 255.255.255.255
+ no shutdown
+!
+
+interface GigabitEthernet1.12
+ encapsulation dot1Q 12
+ ip address 155.1.12.2 255.255.255.0
+ no shutdown
+!
+
+
+!
+! ============================================================
+! Router: R3
+! ============================================================
+!
+
+interface Loopback0
+ ip address 150.1.3.3 255.255.255.255
+ no shutdown
+!
+
+interface GigabitEthernet1.13
+ encapsulation dot1Q 13
+ ip address 155.1.13.3 255.255.255.0
+ no shutdown
+!
+
+
+!
+! ============================================================
+! Router: R4
+! ============================================================
+!
+
+interface Loopback0
+ ip address 150.1.4.4 255.255.255.255
+ no shutdown
+!
+
+interface GigabitEthernet1.14
+ encapsulation dot1Q 14
+ ip address 155.1.14.4 255.255.255.0
+ no shutdown
+!
+
+
